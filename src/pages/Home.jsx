@@ -7,6 +7,7 @@ import Image2 from "../assets/images/man sniffing wine.png";
 import Image3 from "../assets/images/pouring wine.png";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 function Home() {
 
@@ -63,6 +64,7 @@ function Home() {
             </li>
           </ul>
         </section>
+        <Footer />
       </main>
 
       <main className="mobile-home">
@@ -94,7 +96,7 @@ function Home() {
           </div>
         </section>
       </main>
-      <Footer className="home-footer"/>
+
     </div>
   );
 }
