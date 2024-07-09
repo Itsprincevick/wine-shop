@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* General Styles */
+.contact-page {
+  width: 100%;
+}
+
+.contact-intro {
+  width: 100%;
+  height: 320px;
+  top: 144px;
+  background-image: url("../assets/images/bg-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-intro h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 74.4px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-intro p {
+  width: 744px;
+  height: 58px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-intro .email {
+  color: #4548e8;
+  cursor: pointer;
+}
+
+/* Contact Details Section */
+.contact-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.contacts-container {
+  height: 740px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  width: 505px;
+  height: 249px;
+  background: #f1f1f1;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px 0px #00000014;
+}
+
+.card-detail {
+  width: 414px;
+  height: 201px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.card-detail h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: left;
+}
+
+.card-info {
+  display: flex;
+  gap: 16px;
+}
+
+.card-info:first-child {
+  width: 32px;
+  height: 32px;
+  gap: 0px;
+  opacity: 0;
+}
+
+.card-info p {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  width: 671px;
+  height: 562px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 8px 16px 0px #00000029;
+  gap: 24px;
+}
+
+.contact-form h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: left;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.input-field,
+.textarea-field {
+  width: 623px;
+  padding: 17px 24px;
+  border-radius: 15px;
+  background: #f1f1f1;
+  border: none;
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #959595;
+}
+
+.textarea-field {
+  height: 149px;
+}
+
+.submit-button {
+  width: 623px;
+  height: 60px;
+  border-radius: 15px;
+  background: #9d0302;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #800000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .contact-intro {
+    background-image: url("../assets/images/mobile-bg.png");
+  }
+  .mobile-contact-nav {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    align-items: center;
+    gap: 8px;
+  }
+  .mobile-contact-nav .mobile-left-icon {
+    width: 32px;
+    height: 32px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .mobile-contact-nav h1 {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  .contact-intro {
+    width: 100%;
+    height: 181px;
+    background-size: cover;
+    background-position: center;
+  }
+  .contact-intro h2 {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  .contact-intro p {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: center;
+    width: 320px;
+  }
+
+  .contact-details {
+    display: block;
+  }
+  .contacts-container {
+    flex-direction: column;
+    height: auto;
+    align-items: normal;
+  }
+  .contact-cards {
+    gap: 16px;
+    padding: 0 2px;
+  }
+  .card-container {
+    width: 100%;
+    height: 164px;
+    background: none;
+  }
+  .card-detail {
+    width: 90%;
+    justify-content: center;
+  }
+  .card-detail h3 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .card-info p {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  .contact-form {
+    width: 100%;
+    height: auto;
+    align-items: normal;
+    justify-content: center;
+    padding: 14px;
+    margin-bottom: 50px;
+  }
+  .contact-form h2 {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  .input-field,
+  .textarea-field {
+    width: 100%;
+  }
+  .submit-button {
+    width: 100%;
+  }
+
+ 
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}

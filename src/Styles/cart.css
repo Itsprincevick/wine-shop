@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.cart-main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 53px;
+  background-color: #f1f1f1;
+  padding-bottom: 72px;
+}
+.cart-section {
+  width: 1200px;
+  height: 367px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 35px;
+  border-radius: 15px;
+}
+
+.shopping-cart-item {
+  width: 1, 160px;
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  position: relative;
+}
+
+.cart-title {
+  width: 1160px;
+  height: 34px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  display: flex;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.cart-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1160px;
+  border: 1px solid black;
+  top: 65px;
+}
+
+.cart-title span {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.cart-item {
+  display: flex;
+  gap: 93px;
+}
+
+.item-info {
+  width: 975px;
+  height: 159px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-name {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+}
+
+.item-description {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #606060;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-quantity {
+  display: flex;
+  gap: 19px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.total-price {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-for-later {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #0f13e4;
+}
+
+.action-buttons {
+  height: 44px;
+  gap: 21px;
+  display: flex;
+}
+
+.remove-button {
+  width: 105px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #dfdfdf;
+  border: none;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.checkout-button {
+  width: 225px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #9d0302;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.saved-section {
+  width: 1200px;
+  height: 166px;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+}
+
+.saved-title {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.saved-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1160px;
+  border: 1px solid black;
+  top: 35px;
+}
+
+.saved-empty {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #acacac;
+}
+
+.cart-main-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 100vw;
+  }
+  .cart-main {
+    display: none;
+  }
+  .cart-main-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6px;
+  }
+
+  .mobile-nav {
+    width: 100%;
+    height: 80px;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .mobile-nav a {
+    font-size: 12px;
+  }
+  .mobile-left-icon {
+    width: 30px;
+    height: 30px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .mobile-nav h1 {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  .mobile-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .mobile-checkout-button {
+    width: 90%;
+    height: 72px;
+    border-radius: 8px;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1599999964237213px;
+    text-align: center;
+    color: #fff;
+    background: #9D0302;
+    cursor: pointer;
+  }
+  .remove-btn {
+    display: block;
+  }
+}
