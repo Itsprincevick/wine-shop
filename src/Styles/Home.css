@@ -118,6 +118,9 @@
   .home {
     display: none;
   }
+  .home-footer {
+    display: none;
+  }
 
   .mobile-home {
     display: flex;

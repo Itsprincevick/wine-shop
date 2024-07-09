@@ -8,20 +8,22 @@ function Footer() {
   return (
     <div className="footer">
       <footer>
-        <h1>
-          GloryTaste <img src={WineGlass} alt="Wine Glass" />
-        </h1>
-        <ul>
-          <li>
-            <img src={XIcon} alt="X Icon" />
-          </li>
-          <li>
-            <img src={InstagramIcon} alt="Instagram Icon" />
-          </li>
-          <li>
-            <img src={FacebookIcon} alt="Facebook Icon" />
-          </li>
-        </ul>
+        <span className="socials">
+          <h1>
+            GloryTaste <img src={WineGlass} alt="Wine Glass" />
+          </h1>
+          <ul>
+            <li>
+              <img src={XIcon} alt="X Icon"  className="social-icon"/>
+            </li>
+            <li>
+              <img src={InstagramIcon} alt="Instagram Icon" className="social-icon"/>
+            </li>
+            <li>
+              <img src={FacebookIcon} alt="Facebook Icon" className="social-icon"/>
+            </li>
+          </ul>
+        </span>
         <form action="#">
           <label htmlFor="#">Join Our Email List</label>
           <span>

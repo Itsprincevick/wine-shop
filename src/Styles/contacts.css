@@ -181,6 +181,10 @@
   background: #800000;
 }
 
+.mobile-contact-nav {
+  display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   body {

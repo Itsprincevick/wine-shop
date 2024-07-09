@@ -94,7 +94,7 @@ function Home() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer className="home-footer"/>
     </div>
   );
 }
